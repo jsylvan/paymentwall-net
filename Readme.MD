@@ -26,26 +26,24 @@ Then use a code sample below.
 ##Digital Goods API
 
 ####Configuring Web.Config (Client)
-<pre><code>
-<appSettings>
-    <add key="PaymentWallAppKey" value="YOUR_APPLICATION_KEY" /> <!-- available in your Paymentwall merchant area -->
-    <!-- Do not share this key with the outside world, including public source control -->
-	<add key="PaymentWallSecretKey" value="YOUR_SECRET_KEY" /> <!-- available in your Paymentwall merchant area -->	
-	<!-- Do not share this key with the outside world, including public source control -->
-	<add key="PaymentWallPostBackURL" value="YOUR_PUBLIC_IIS_LOCATION/payWallPostBack" /> 
-	<!-- Do not share this key with the outside world, including public source control -->
-<appSettings>
+
+<pre><code>&lt;appSettings&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;add key="PaymentWallAppKey" value="YOUR_APPLICATION_KEY" /&gt; &lt;!-- available in your Paymentwall merchant area --&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Do not share this key with the outside world, including public source control --&gt;
+&nbsp;&lt;add key="PaymentWallSecretKey" value="YOUR_SECRET_KEY" /&gt; &lt;!-- available in your Paymentwall merchant area --&gt;	
+&nbsp;&lt;!-- Do not share this key with the outside world, including public source control --&gt;
+&nbsp;&lt;add key="PaymentWallPostBackURL" value="YOUR_PUBLIC_IIS_LOCATION/payWallPostBack" /&gt; 
+&nbsp;&lt;!-- Do not share this key with the outside world, including public source control --&gt;
+&lt;appSettings&gt;
 </code></pre>
 
 ####Configuring Web.Config (PostBack)
-<pre><code>
-<appSettings>
-    <add key="PaymentWallAppKey" value="YOUR_APPLICATION_KEY" /> <!-- available in your Paymentwall merchant area -->
-    <!-- Do not share this key with the outside world, including public source control -->
-	<add key="PaymentWallSecretKey" value="YOUR_SECRET_KEY" /> <!-- available in your Paymentwall merchant area -->	
-	<!-- Do not share this key with the outside world, including public source control -->	
-<appSettings>
-</code></pre>
+<pre><code>&lt;appSettings&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;add key="PaymentWallAppKey" value="YOUR_APPLICATION_KEY" /&gt; &lt;!-- available in your Paymentwall merchant area --&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Do not share this key with the outside world, including public source control --&gt;
+&nbsp;&lt;add key="PaymentWallSecretKey" value="YOUR_SECRET_KEY" /&gt; &lt;!-- available in your Paymentwall merchant area --&gt;	
+&nbsp;&lt;!-- Do not share this key with the outside world, including public source control --&gt;	
+&lt;appSettings&gt;</code></pre>
 
 ####Widget Call
 [Web API details](http://www.paymentwall.com/en/documentation/Digital-Goods-API/710#paymentwall_widget_call_flexible_widget_call)
@@ -75,7 +73,7 @@ The widget is a payment page hosted by Paymentwall that embeds the entire paymen
 in Razor
 <pre><code>
 //Controller:
-ViewVag.Widget = widget;
+ViewBag.Widget = widget;
 
 //Razor
 @Html.Raw(ViewBag.Widget)
