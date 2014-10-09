@@ -95,6 +95,10 @@ if ($pingback->validate()) {
   echo $pingback->getErrorSummary();
 }</code></pre>
 
+####Real Time Updates
+
+When a payment is proessed the system will send a SignalR message, signifying the status of a payment. Any web application that is associated with the user's status (such as current virtual currency) can be updated in real time using SignalR calls.
+
 ##Virtual Currency API
 
 ####Initializing Paymentwall
