@@ -10,6 +10,8 @@ This library allows developers to use [Paymentwall APIs](http://paymentwall.com/
 To use Paymentwall, all you need to do is to sign up for a Paymentwall Merchant Account so you can setup an Application designed for your site.
 To open your merchant account and set up an application, you can [sign up here](http://paymentwall.com/signup/merchant?source=gh).
 
+This library is a third party conversion of Paymentwall's paymentwall-php library, under the MIT license.
+
 #Installation
 To install the library in your environment, you can download the [ZIP archive](https://github.com/jsylvan/paymentwall-net/archive/master.zip), unzip it and add a reference to Libs\PaymentWallApoc.DLL into your project.
 
@@ -24,6 +26,7 @@ Then use a code sample below.
 ##Digital Goods API
 
 ####Configuring Web.Config (Client)
+<pre><code>
 <appSettings>
     <add key="PaymentWallAppKey" value="YOUR_APPLICATION_KEY" /> <!-- available in your Paymentwall merchant area -->
     <!-- Do not share this key with the outside world, including public source control -->
@@ -32,14 +35,17 @@ Then use a code sample below.
 	<add key="PaymentWallPostBackURL" value="YOUR_PUBLIC_IIS_LOCATION/payWallPostBack" /> 
 	<!-- Do not share this key with the outside world, including public source control -->
 <appSettings>
+</code></pre>
 
 ####Configuring Web.Config (PostBack)
+<pre><code>
 <appSettings>
     <add key="PaymentWallAppKey" value="YOUR_APPLICATION_KEY" /> <!-- available in your Paymentwall merchant area -->
     <!-- Do not share this key with the outside world, including public source control -->
 	<add key="PaymentWallSecretKey" value="YOUR_SECRET_KEY" /> <!-- available in your Paymentwall merchant area -->	
 	<!-- Do not share this key with the outside world, including public source control -->	
 <appSettings>
+</code></pre>
 
 ####Widget Call
 [Web API details](http://www.paymentwall.com/en/documentation/Digital-Goods-API/710#paymentwall_widget_call_flexible_widget_call)
