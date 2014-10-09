@@ -21,6 +21,30 @@ Alternatively, you can run:
 
 Then use a code sample below.
 
+#Projects 
+
+##paymentwall-net-Logging
+##paymentwall-net-Logging-Tests
+This project logs every transaction sent to the database. The purpose of this project is to keep an internal record of all monetary transactions. This can be used to verify all money is actually is actually accounted for.
+
+While the sample application uses a Microsoft SQL database, any database supported by ADO.NET and Entity Framework 6 should work.
+
+##paymentwall-net
+##paymentwall-net-Logging-Tests
+This is a sample MVC application that purchases virtual currency from paymentwall.
+
+##paymentwall-net-goods-api
+##paymentwall-net-goods-api-tests
+This project contains code required to contact the paymentwall services and initialize a transactions.
+
+##paymentwall-net-goods-pingback
+##paymentwall-net-goods-pingback-tests
+This project contains the webservice that paymentwall calls upon a sucessful payment. It uses SignalR to communicate with other machines on the network. 
+
+##paymentwall-net-goods-admin
+##paymentwall-net-goods-admin-tests
+This project contains a sample administrative panel that can be used to manage payments as well as view the interal transaction trail.
+
 #Code Samples
 
 ##Digital Goods API
